@@ -7,9 +7,10 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
+var browserSync  = require('browser-sync');
+var reload = browserSync.reload;
 
-/*var browserSync  = require('browser-sync').create();
-var concat = require('gulp-concat');
+/*var concat = require('gulp-concat');
 var gulIf = require('gulp-if');
 var useRef = require('gulp-useref');
 var uglifyCss = require('gulp-uglifycss');
@@ -24,6 +25,7 @@ gulp.task('scripts',function() {
    	.pipe(rename({suffix:'.min'}))
    	.pipe(uglify())
    	.pipe(gulp.dest('app/js')) //destino del archivo minificado
+    .pipe(reload({stream:true}));
 });
 ////////////////////////////////
 //////	Sass Task
@@ -37,24 +39,44 @@ gulp.task('sass', function() {
       includePaths: ['scss'] //compila  de sass a css indicamos el archivo origen sass
     }))
     .pipe(autoprefixer('last 2 versions')) 
-    .pipe(gulp.dest('./app/css'));  //lo guarda en el destino app/css
+    .pipe(gulp.dest('./app/css'))  //lo guarda en el destino app/css
+    .pipe(reload({stream:true}));
 });
 
+////////////////////////////////
+//////	HTML Task
+///////////////////////////////
+gulp.task('html', function(){
+    gulp.src('app/**/*.html')
+    .pipe(reload({stream:true}));
+  });
+
+////////////////////////////////
+//////  Browser-Sync Task
+///////////////////////////////
+gulp.task('browser-sync', function(){
+    browserSync({
+        server:{
+          baseDir: "./app/"
+        }
+      });
+  });
 
 
 ////////////////////////////////
-//////	Watch Task
+//////  Watch Task
 ///////////////////////////////
 gulp.task('watch',function(){
     gulp.watch("app/js/**/*.js", ['scripts']);
     gulp.watch("scss/**/*.scss", ['sass']);
+    gulp.watch("app/**/*.html", ['html']);
     
 }) 
 
 ////////////////////////////////
 //////	default Task
 ///////////////////////////////
-gulp.task('default', ['scripts', 'watch','sass']);
+gulp.task('default', ['scripts', 'sass', 'html', 'browser-sync','watch']);
 
 
 

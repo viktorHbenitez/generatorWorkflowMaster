@@ -1,7 +1,7 @@
 .cuadro {
   position: relative;
   display: inline-block;
-  background: blue;
+  background: yellow;
   width: 500px;
   height: 500px;
   border: 1px solid blue; }
