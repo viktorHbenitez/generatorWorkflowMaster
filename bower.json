@@ -1,0 +1,23 @@
+{
+  "name": "generator-workflow",
+  "authors": [
+    "viktorHbenitez <viktorHbenitez@hotmail.com>"
+  ],
+  "description": "master workflow",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "angular": "^1.5.5",
+    "bootstrap-sass": "^3.3.6",
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}

@@ -1,0 +1,14 @@
+
+$amarillo: yellow;
+$azul: blue;
+
+.cuadro
+{
+	position: relative;
+	display: inline-block;
+	background: $azul;
+	width: 500px;
+	height: 500px;
+	border: 1px solid blue;
+
+}
