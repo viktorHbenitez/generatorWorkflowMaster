@@ -1,7 +1,10 @@
+body {
+  background: red; }
+
 .cuadro {
   position: relative;
   display: inline-block;
-  background: yellow;
+  background: red;
   width: 500px;
   height: 500px;
   border: 1px solid blue; }
