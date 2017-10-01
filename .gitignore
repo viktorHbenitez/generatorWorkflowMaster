@@ -1,17 +1,3 @@
-.DS_Store
-*.log
-node_modules
-build
-*.node
-components
-coverage
-*.orig
-.idea
-sandbox
-test/out-fixtures/*
-test/watch-*.txt
-gulp.1
-
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -19,7 +5,7 @@ gulp.1
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
-
+.idea
 # Sensitive or high-churn files:
 .idea/**/dataSources/
 .idea/**/dataSources.ids
@@ -33,6 +19,9 @@ gulp.1
 .idea/**/gradle.xml
 .idea/**/libraries
 
+# CMake
+cmake-build-debug/
+
 # Mongo Explorer plugin:
 .idea/**/mongoSettings.xml
 
@@ -42,10 +31,12 @@ gulp.1
 ## Plugin-specific files:
 
 # IntelliJ
-/out/
+out/
 
-# mpeltonen/sbt-idea plugin
+#plugin
 .idea_modules/
+node_modules/
+
 
 # JIRA plugin
 atlassian-ide-plugin.xml
@@ -58,3 +49,4 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+

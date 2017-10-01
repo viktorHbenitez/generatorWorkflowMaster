@@ -1,16 +1,5 @@
-
-$amarillo: yellow;
-$azul: blue;
-body {
-	background: red;
-}
-.cuadro
-{
-	position: relative;
-	display: inline-block;
-	background: red;
-	width: 500px;
-	height: 500px;
-	border: 1px solid blue;
-
-}
+@import "variables";
+@import "mixin";
+@import "header";
+@import "form";
+@import "layout";
