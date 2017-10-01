@@ -1,35 +1,22 @@
-# generatorWorkflowMaster
-workflow master para la generacion de web app
+Scaffoling of the project
+http://www.initializr.com/
 
-workflow
-
-node - npm - bower - git --version
-bower init genera bower.json
-
-install dependence bower install jquery angular bootstrap bootstrap-sass --save
-bower list verificar las dependencias actualizados(beta) disponibles bower unistall (dependencia) --save (la elimina de del archivo bower.json) bower list --paths (dependencias instaladas bower.json)
+1. if we have the the package.json file you will run npm install and install the dependencies
+2. Create gulpfile.js and add the tasks
+3. Create a .gitignore file and do not record the node_modules
 
 
+github jsPDF
+https://github.com/MrRio/jsPDF
 
-USO DE GIT (ACTUALIZAR REPOSIROTIO REMOTO Y TRABAJO LOCAL)
+Exporting PDF with jspdf not rendering CSS
+https://stackoverflow.com/questions/25946275/exporting-pdf-with-jspdf-not-rendering-css
 
-1. Creacion de repositorio remoto
-	git remote add origin [repo]
-2. Actualizar contenido subido al repositorio remoto con el local
-	git fetch origin
-3. Fusion de la colaboracion remota con el repositorio local
-	git merge origin/master
+jq-idealForms
+https://github.com/elclanrs/jq-idealforms
 
-** En desarrollo**
-git fetch origin
-git merge origin/master
+Create form with bootstrap
+https://codepen.io/jaycbrf/pen/iBszr/
 
-1. Guardar en local
-	git add .
-	git commit  -m "guardar commit"
-
-2.  subir al repositorio remoto
-git fetch origin
-git merge origin/master
-
-git push origin master			
+Create an rectangule with html only
+https://codepen.io/arturheinze/pen/ZGvOMw

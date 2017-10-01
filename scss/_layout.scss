@@ -1,0 +1,87 @@
+html{
+  //@include border-box;
+}
+
+*,*:before,*:after{
+  //box-sizing: inherit;
+}
+
+body{
+  background-color: $bgColor;
+  margin:0;
+  padding-bottom: 20px;
+  font-size: 1.4rem;
+  color: $fontTextColor;
+  font-family: $fuente-principal;
+
+
+}
+
+
+h1.titulo{
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+
+
+  @include tablet {
+    font-size: 5em!important;
+    margin-top: 40px;
+
+
+    &:after {
+      content: '';
+      margin: 0 auto;
+      background-image: url('/img/separador.png');
+      height: 30px;
+      width: 100px;
+      display: block;
+    }
+
+  }
+}
+
+h2{
+  font-size: 4em;
+  color: darken($accent-color, 10);
+  text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+}
+
+.subtitulos{
+  display: none;
+
+  @include tablet{
+    display: block;
+  }
+}
+
+h3.description{
+  width: 180px;
+  height: 23px;
+  text-align: left;
+  font-family: $fuente-titulos;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  font-size: 22px;
+  color: #1b4491;
+}
+
+
+h1.name{
+  font-family: $fuente-titulos;
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+  color: #1b4491;
+}
+
+
+ul
+{
+  list-style-type: none;
+}
+
