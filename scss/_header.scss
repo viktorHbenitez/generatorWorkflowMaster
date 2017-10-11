@@ -1,0 +1,24 @@
+
+.responsive-headline{
+
+  font-size: 3rem!important;
+
+  @include tablet{
+    font-size: 8rem!important;
+  }
+
+
+}
+
+header{
+  #aboutme{
+
+    font-size: 1.1rem!important;
+
+    @include tablet{
+      font-size: 1.8rem!important;
+
+
+    }
+  }
+}

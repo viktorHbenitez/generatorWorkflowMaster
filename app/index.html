@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
         <!--Menor a 65 caracteres tag title-->
-        <title>Title Web App</title>
+        <title>My resume Victor Benitez</title>
 
         <!--Diferente descipcion por pagina-->
         <meta name="keywords" content=""/>
@@ -22,58 +22,646 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-        <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
-        <!--<link rel="stylesheet" href="css/main.css">-->
+
+        <!-- Favicons    ================================================== -->
+        <link rel="shortcut icon" href="favicon.png" >
+
+        <!-- CSS
+         ================================================== -->
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="css/app.min.css">
         <!--<link rel="stylesheet" href="css/bootstrapValidator.css">-->
         <!--<script src="https://unpkg.com/vue"></script>-->
         <!--<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
+
+
+        <!-- Script
+        ================================================== -->
+        <script src="js/modernizr.js"></script>
+
     </head>
     <body >
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <section class="container">
-            <h1>This a title</h1>
-        </section>
+        <!-- Header
+        ================================================== -->
+        <header id="home">
 
-        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-        <script>
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyAjh0kIoOT4PGnswGwiZsQKXSdEAPQfPZY",
-                authDomain: "curruculumvitae-166f0.firebaseapp.com",
-                databaseURL: "https://curruculumvitae-166f0.firebaseio.com",
-                projectId: "curruculumvitae-166f0",
-                storageBucket: "curruculumvitae-166f0.appspot.com",
-                messagingSenderId: "606299421152"
-            };
-            firebase.initializeApp(config);
-        </script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+            <nav id="nav-wrap">
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+                <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-        <script src="js/main.js"></script>
-        <script async src="js/scripts.js"></script>
-        <script src="js/jspdf.js"></script>
-        <script src="js/jquery-2.1.3.js"></script>
-        <script src="js/pdfFromHTML.js"></script>
-        <!--<script src="js/html2canvas.js"></script>-->
-        <script src="js/bootstrapValidator.js"></script>
+                <ul id="nav" class="nav">
+                    <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+                    <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                    <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
+                </ul> <!-- end #nav -->
+
+            </nav> <!-- end #nav-wrap -->
+
+            <div class="row banner">
+                <div class="banner-text">
+                    <h1 class="responsive-headline">I am Victor Benitez.</h1>
+
+                    <h3 id="aboutme">“Passionate of design and <span>develop mobile apps</span>. Ever on a constant learning and updating knowledge and trying new technologies.” Let's <a class="smoothscroll" href="#about">start scrolling</a>
+                        and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+                    <hr />
+                    <ul class="social">
+                        <li><a href="https://twitter.com/viktorHbenitez" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/victor-hugo-benitez-bosques-6b579614b" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                        <li><a href="https://github.com/viktorHbenitez" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="scrolldown">
+                <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+            </p>
+
+        </header> <!-- Header End -->
 
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+        <!-- About Section
+        ================================================== -->
+        <section id="about">
+
+            <div class="row">
+
+                <div class="three columns">
+
+                    <img class="profile-pic"  src="images/profilepic.jpg" alt="imageProfile" />
+
+                </div>
+
+                <div class="nine columns main-col">
+
+                    <h2>About Me</h2>
+
+                    <p>“Passionate of design and <span>develop mobile apps</span>. Ever on a constant learning and updating knowledge and trying new technologies.”
+                    </p>
+
+                    <div class="row">
+
+                        <div class="columns contact-details">
+
+                            <h2>Contact Details</h2>
+                            <p class="address">
+
+                            <table class="details">
+                                <!--<thead>-->
+                                <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<th>Name</th>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<th>ID</th>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<th>Favorite Color</th>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+                                <!--</thead>-->
+                                <tbody>
+                                <tr>
+                                    <td><i class="fa fa-user"></i></td>
+                                    <td><span class="description">Name: </span></td>
+                                    <td><span>Benitez Bosques Victor Hugo</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-calendar "></i></td>
+                                    <td><span class="description">Date of birth: </span></td>
+                                    <td><span> December 26th 1985</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-map-marker"></i></td>
+                                    <td><span class="description">Address: </span></td>
+                                    <td>
+                                        <span> 5 Sur E 10113 1 Villas del Sur.</span>
+                                        <ul>
+                                            <li>Puebla, Mexico</li>
+                                            <li>Zipcode: 72474</li>
+                                        </ul>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-phone"></i></td>
+                                    <td><span class="description">Cellphone:</span></td>
+                                    <td><span> (+52) 22 21 67 87 76</span></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-envelope"></i></td>
+                                    <td><span class="description">Email:</span></td>
+                                    <td><span>victorHbenitez85@hotmail.com</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fa fa-envelope"></i></td>
+                                    <td><span class="description">Alternative email:</span></td>
+                                    <td><span>victor.benitez@alumno.buap.mx</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <!--<div class="columns download">-->
+                            <!--<p>-->
+                                <!--<a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>-->
+                            <!--</p>-->
+                        <!--</div>-->
+
+                    </div> <!-- end row -->
+
+                </div> <!-- end .main-col -->
+
+            </div>
+
+        </section> <!-- About Section End-->
+
+
+
+        <!-- Portfolio Section
+        ================================================== -->
+        <section id="portfolio">
+
+            <div class="row">
+
+                <div class="twelve columns collapsed">
+
+                    <h1>Certifications & Courses.</h1>
+
+                    <!-- portfolio-wrapper -->
+                    <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-01" title="">
+                                    <img alt="" src="images/portfolio/pokemon.jpg">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>iOS</h5>
+                                            <p>Swift, SpriteKit</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-02" title="">
+                                    <img alt="" src="images/portfolio/web.jpg">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>Web Workflows</h5>
+                                            <p>SASS, NPM, Gulp</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+
+
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-05" title="">
+                                    <img alt="" src="images/portfolio/swift3.jpg">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>iOS, swift 3</h5>
+                                            <p>Udemy</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-03" title="">
+                                    <img alt="" src="images/portfolio/busuu.jpg">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>English Certification</h5>
+                                            <p>Busuu</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+
+                        <div class="columns portfolio-item">
+                            <div class="item-wrap">
+
+                                <a href="#modal-04" title="">
+                                    <img alt="" src="images/portfolio/babbel.jpg">
+                                    <div class="overlay">
+                                        <div class="portfolio-item-meta">
+                                            <h5>English Certification: On the telephone</h5>
+                                            <p>Babbel</p>
+                                        </div>
+                                    </div>
+                                    <div class="link-icon"><i class="icon-plus"></i></div>
+                                </a>
+
+                            </div>
+                        </div> <!-- item end -->
+
+                    </div> <!-- portfolio-wrapper end -->
+
+                </div> <!-- twelve columns end -->
+
+
+                <!-- Modal Popup
+                 --------------------------------------------------------------- -->
+
+                <div id="modal-01" class="popup-modal mfp-hide">
+
+                    <img class="scale-with-grid" src="https://udemy-certificate.s3.amazonaws.com/image/UC-262G5JZK.jpg" alt="" />
+
+                    <div class="description-box">
+                        <h4>Crea tu propio Pokemon Go para iOS</h4>
+                        <!--<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>-->
+                        <ul>
+                            <li>Crear un videojuego como Pokemon Go desde cero</li>
+                            <li>Usar tablas en las apps de iOS</li>
+                            <li>Guardar y persistir datos de apps con Core Data</li>
+                            <li>Conocer los mapas y su uso en iOS</li>
+                            <li>Utilizar y combinar SpriteKit con Swift</li>
+                        </ul>
+                        <span class="categories"><i class="fa fa-tag"></i>iOS App</span>
+                    </div>
+
+                    <div class="link-box">
+                        <a href="https://www.udemy.com/certificate/UC-262G5JZK/" target="_blank">Details</a>
+                        <a class="popup-modal-dismiss">Close</a>
+                    </div>
+
+                </div><!-- modal-01 End -->
+
+                <div id="modal-02" class="popup-modal mfp-hide">
+
+                    <img class="scale-with-grid" src="https://udemy-certificate.s3.amazonaws.com/image/UC-N5SOPZDF.jpg" alt="" />
+
+                    <div class="description-box">
+                        <h4>Desarrollo Web Eficiente con SASS, NPM, Gulp y Web Workflows</h4>
+                        <ul>
+                            <li>Incorporar SASS a tus proyectos web</li>
+                            <li>Crear un Workflow con Gulp</li>
+                            <li>Crearemos un Grid parecido al de Frameworks como Bootstrap y Foundation que podrás utilizar en tus proyectos</li>
+                            <li>Crearemos un proyecto que será adaptable a distintas resoluciones utilizando SASS</li>
+                            <li>Manejar las dependencias con NodeJS</li>
+                        </ul>                        <span class="categories"><i class="fa fa-tag"></i>Web App</span>
+                    </div>
+
+                    <div class="link-box">
+                        <a href="https://www.udemy.com/certificate/UC-N5SOPZDF/" target="_blank">Details</a>
+                        <a class="popup-modal-dismiss">Close</a>
+                    </div>
+
+                </div><!-- modal-02 End -->
+
+
+                <div id="modal-05" class="popup-modal mfp-hide">
+
+                    <img class="scale-with-grid" src="images/portfolio/swift3.jpg" alt="" />
+
+                    <div class="description-box">
+                        <h4> Curso de iOS 10 y Swift 3: de Cero a Experto </h4>
+                        <ul>
+                            <li>Saber documentarse y expandir conocimientos con frameworks avanzados como Core Data, CloudKit, AVFoundation</li>
+                            <li>Utilizar un control de versiones en forma de repositorio Github o Bitbucket</li>
+                            <li>Crear apps basadas en servidores remotos, montando el tuyo propio con Parse y Amazon Web Services</li>
+                        </ul>                        <span class="categories"><i class="fa fa-tag"></i>Web App</span>
+                        <span class="categories"><i class="fa fa-tag"></i>iOS Certification</span>
+                    </div>
+
+                    <div class="link-box">
+                        <a href="https://www.udemy.com/certificate/UC-9BXPFWDC/" target="_blank">Details</a>
+                        <a class="popup-modal-dismiss">Close</a>
+                    </div>
+
+                </div><!-- modal-04 End -->
+
+
+                <div id="modal-03" class="popup-modal mfp-hide">
+
+                    <img class="scale-with-grid" src="images/portfolio/busuu.png" alt="" />
+
+                    <div class="description-box">
+                        <h4>English certification</h4>
+                        <p>English B+</p>
+                        <span class="categories"><i class="fa fa-tag"></i></span>
+                    </div>
+
+                    <div class="link-box">
+                        <a href="https://api.busuu.com/anon/certificates/0896c1c181e490c7cda3e141e7f8b8a7" target="_blank">Details</a>
+                        <a class="popup-modal-dismiss">Close</a>
+                    </div>
+
+                </div><!-- modal-03 End -->
+
+                <div id="modal-04" class="popup-modal mfp-hide">
+
+                    <img class="scale-with-grid" src="images/portfolio/babbel.png" alt="" />
+
+                    <div class="description-box">
+                        <h4>Ingles en el trabajo: On the telephone</h4>
+                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                        <span class="categories"><i class="fa fa-tag"></i>English Certification</span>
+                    </div>
+
+                    <div class="link-box">
+                        <a href="https://home.babbel.com/user/babbel_certificate?course_uuid=506ca2d67cc44677b51d6412b6aaaf3e&course_overview_uuid=f4a6d9a67699424e94e8c991c87ded6f" target="_blank">Details</a>
+                        <a class="popup-modal-dismiss">Close</a>
+                    </div>
+
+                </div><!-- modal-04 End -->
+
+
+
+
+            </div> <!-- row End -->
+
+        </section> <!-- Portfolio Section End-->
+
+
+
+        <!-- Resume Section
+        ================================================== -->
+        <section id="resume">
+
+
+            <!-- Skills
+            ----------------------------------------------- -->
+            <div class="row skill">
+
+                <div class="three columns header-col">
+                    <h1><span>Professional Skills</span></h1>
+                </div>
+
+                <div class="nin columns main-col">
+
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                    </p>
+
+                    <div class="bars">
+                        <div id="caja1">
+
+                            <ul class="skills">
+                                <li><span class="bar-expand ios"></span><em>Desarrollador iOS</em></li>
+                                <li><span class="bar-expand swift"></span><em>Swift</em></li>
+                                <li><span class="bar-expand android"></span><em>Desarrollo Android Jr</em></li>
+                                <li><span class="bar-expand sql"></span><em>SQL</em></li>
+                                <li><span class="bar-expand sql"></span><em>SQLite</em></li>
+                                <li><span class="bar-expand github"></span><em>Git & Github</em></li>
+                            </ul>
+
+                        </div>
+
+
+                        <div id="caja2">
+
+                            <ul class="skills">
+                                <li><span class="bar-expand bootstrap"></span><em>Bootstrap</em></li>
+                                <li><span class="bar-expand scrum"></span><em>Metodologia SCRUM</em></li>
+                                <li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
+                                <li><span class="bar-expand javascript"></span><em>Javascript</em></li>
+                                <li><span class="bar-expand html5"></span><em>HTML</em></li>
+                                <li><span class="bar-expand css"></span><em>CSS</em></li>
+                            </ul>
+
+                        </div>
+
+
+
+                    </div><!-- end skill-bars -->
+
+                </div> <!-- main-col end -->
+
+            </div> <!-- End skills -->
+
+
+
+            <!-- Work
+            ----------------------------------------------- -->
+            <div class="row work">
+
+                <div class="three columns header-col">
+                    <h1><span>WORK EXPERIENCE</span></h1>
+                </div>
+
+                <div class="nine columns main-col">
+
+                <div class="row item">
+
+                <div class="twelve columns">
+
+                    <h3>TERRANOVA DIGITAL COMPANY.</h3>
+                    <p class="info"> Freelancer (Web developer)<span>&bull;</span> <em class="date">August 2017</em></p>
+
+                    <ol>
+                        <li>“Decimoséptima Carrera Atlixco Pueblo Mágico” Web Application.</li>
+                        <li>“Medio Maraton del Dia del Papá” Web Application.</li>
+                    </ol>
+
+                    <ul class="withoutBollet">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>GULP</li>
+                        <li>Firebase</li>
+                    </ul>
+
+
+                </div>
+
+                </div> <!-- item end -->
+
+                    <div class="row item">
+
+                        <div class="twelve columns">
+
+                            <h3>HSBC MEXICO S. A. INST. BCA. MULTIPLE</h3>
+                            <p class="info">Teller <span>&bull;</span> <em class="date">2006 - 2011</em></p>
+
+                            <p>Duties of that position:</p>
+                            <ul class="withoutBollet">
+                                <li>Customer services</li>
+                                <li>Sales in the finance sector.</li>
+                                <li>Teamwork</li>
+                                <li>Troubleshooting</li>
+                            </ul>
+                        </div>
+
+                    </div> <!-- item end -->
+
+                </div> <!-- main-col end -->
+
+            </div> <!-- End Work -->
+
+
+
+
+            <!-- Education
+            ----------------------------------------------- -->
+            <div class="row education">
+
+                <div class="three columns header-col">
+                    <h1><span>EDUCATION</span></h1>
+                </div>
+
+                <div class="nine columns main-col">
+
+                    <div class="row item">
+
+                        <div class="twelve columns">
+
+                            <h3>BENEMÉRITA UNIVERSIDAD AUTÓNOMA DE PUEBLA - BUAP. (Currently)</h3>
+                            <p class="info">INGENEER IN COMPUTER SCIENCE <span>&bull;</span> <em class="date">April 2012</em></p>
+
+                            <ul class="withoutBollet">
+                                <li>Total percent of credits: 93%</li>
+                                <li>Current average grade: 9.6</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div> <!-- item end -->
+
+                    <div class="row item">
+
+                        <div class="twelve columns">
+
+                            <h3>UNIVERSIDAD TECNOLÓGICA DE IZÚCAR DE MATAMOROS - UTIM</h3>
+                            <p class="info">UNIVERSITY TECHNICIAN IN INFORMATION TECHNOLOGY<span>&bull;</span> <em class="date">2003 - 2005</em></p>
+
+                        </div>
+
+                    </div> <!-- item end -->
+
+                </div> <!-- main-col end -->
+
+            </div> <!-- End Education -->
+
+
+        </section> <!-- Resume Section End-->
+
+
+
+        <!-- Testimonials Section
+        ================================================== -->
+        <section id="testimonials">
+
+            <div class="text-container">
+
+                <div class="row">
+
+                    <div class="two columns header-col">
+
+                        <h1><span>Client Testimonials</span></h1>
+
+                    </div>
+
+                    <div class="ten columns flex-container">
+
+                        <div class="flexslider">
+
+                            <ul class="slides">
+
+                                <li>
+                                    <blockquote>
+                                        <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+                                            to do what you believe is great work. And the only way to do great work is to love what you do.
+                                            If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+                                        </p>
+                                        <cite>Steve Jobs</cite>
+                                    </blockquote>
+                                </li> <!-- slide ends -->
+
+                                <li>
+                                    <blockquote>
+                                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                                            nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                        </p>
+                                        <cite>Mr. Adobe</cite>
+                                    </blockquote>
+                                </li> <!-- slide ends -->
+
+                            </ul>
+
+                        </div> <!-- div.flexslider ends -->
+
+                    </div> <!-- div.flex-container ends -->
+
+                </div> <!-- row ends -->
+
+            </div>  <!-- text-container ends -->
+
+        </section> <!-- Testimonials Section End-->
+
+
+
+        <!-- footer
+        ================================================== -->
+        <footer>
+
+            <div class="row">
+
+                <div class="twelve columns">
+
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+
+                    <ul class="copyright">
+                        <li>&copy; Copyright 2017</li>
+                        <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+                    </ul>
+
+                </div>
+
+                <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+            </div>
+
+        </footer> <!-- Footer End-->
+
+        <!-- Java Script
+        ================================================== -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/waypoints.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/magnific-popup.js"></script>
+        <script src="js/init.js"></script>
+
     </body>
 </html>

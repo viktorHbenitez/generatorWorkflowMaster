@@ -1,0 +1,47 @@
+.skill{
+
+
+  .row .nin {
+    width: 89%!important;
+  }
+
+  #caja1{
+
+    float: left;
+    width: 45%;
+    margin-right: 20px;
+  }
+  #caja2{
+
+    float: left;
+    width: 45%;
+
+  }
+
+}
+
+.bar-expand {
+  height: 15px;
+  background: #2196F3!important;
+}
+
+.bars li {
+
+  height: 15px;
+}
+
+#resume h1 span {
+  display: block;
+}
+
+.bars li em {
+
+  font: 0.8rem 'opensans-bold', sans-serif;
+
+
+  @include tablet{
+    font: 1.4rem 'opensans-bold', sans-serif;
+
+  }
+
+}

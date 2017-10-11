@@ -1,0 +1,45 @@
+.details{
+
+  font-size: 1.4rem;
+
+  @include tablet{
+    font-size: 2rem;
+
+
+  }
+
+  i{
+    font-size: 2rem!important;
+  }
+
+  .description{
+    display: none;
+
+    @include tablet{
+      display: inline-block!important;
+      font-weight: bold!important;
+      color: whitesmoke;
+
+
+    }
+
+  }
+
+
+  @include tablet{
+    font-size: 2rem;
+
+
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td, th {
+    border: none;
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+}

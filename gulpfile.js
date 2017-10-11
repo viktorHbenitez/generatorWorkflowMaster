@@ -89,7 +89,7 @@ gulp.task('sassMinificacion', function () {
   // './' se encuentra en el mismo nivel el archivo node_module
   archivosCSS = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css');
 
-  return merge(archivosSASS, archivosCSS)
+  return merge(archivosSASS)
     .pipe(concat('app.css'))
     .pipe(cssmin()) //minificar archivo concatenado
     .pipe(rename({
@@ -132,9 +132,9 @@ gulp.task('sass', function () {
     }));
 
   // './' se encuentra en el mismo nivel el archivo node_module
-  archivosCSS = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css');
+  // archivosCSS = gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css');
 
-  return merge(archivosSASS, archivosCSS)
+  return merge(archivosSASS)
     .pipe(concat('app.css'))
     .pipe(cssmin()) //minificar archivo concatenado
     .pipe(rename({

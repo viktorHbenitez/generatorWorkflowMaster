@@ -1,0 +1,7 @@
+#about{
+  padding-top: 25px;
+
+  @include tablet{
+    padding-top: 45px;
+  }
+}
